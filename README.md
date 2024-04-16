@@ -42,3 +42,12 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 
 [lil-course-url]: https://www.linkedin.com/learning/django-essential-training
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2894047/2894047-1632244073199-16x9.jpg
+
+
+
+## More notes 
+- Django uses MVT Model view template framework - responsible for handling responses.
+
+- Views - what you see.
+- Model - handles the data and how it is stored.
+- Template - allows us to model data coming from the database.
