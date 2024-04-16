@@ -52,3 +52,4 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 - Model - handles the data and how it is stored.
 - Template - allows us to model data coming from the database.
 
+- <>  we are not using pure html but a backend framework called django for defining templates. 
