@@ -33,9 +33,12 @@ To resolve this issue:
 ### Instructor
 
 Leticia Portella 
-                            
+  #### ORMs (data base handlings)                          
+- Object relational mapping system to crete databasesm class models are tranformed by migrations to tables.
 
+- Each class called a model is a database table and classs atribute is a column.
 
+- Classes --> makemigrations --> migrate --> Database (this is ORM - best for python and django databases).
                             
 
 Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/leticia-portella).
@@ -53,3 +56,12 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 - Template - allows us to model data coming from the database.
 
 - <>  we are not using pure html but a backend framework called django for defining templates. 
+
+#### Modulatization
+- Each app has tobe well modularized.
+
+
+##### Migrations:
+- Django has migrations for auth ready. (python,  filename migrate)
+
+- --> Try Django querry in python project command 
