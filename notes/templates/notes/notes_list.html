@@ -1,13 +1,11 @@
-{% load static %}
+{% extends "base.html" %}
 
-<html>
-    <head>
-        <link rel=" stylesheet" type="text/css" href ="{%static 'css/style.css'%}"/>
-    <h1>These are the notes:</h1>
+{% block content %}
+<h1>These are the notes:</h1>
     <ul>
         {% for note in notes %}
             <li class="note-li">{{ note.title }}</li>
             <li>{{ note.text }}</li>
         {% endfor %}
     </ul>
-</html>
+{% endblock %}
