@@ -65,3 +65,6 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 - Django has migrations for auth ready. (python,  filename migrate)
 
 - --> Try Django querry in python project command 
+
+#### Creating Webpages,
+* ####CRUDE operations 
