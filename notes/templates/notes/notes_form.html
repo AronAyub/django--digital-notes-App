@@ -3,18 +3,20 @@
 {% block content %}
 
 <form method="POST">{% csrf_token %}
-
     {{ form }}
-    <button type="submit"  class="btn-primary my-5">Submit</button>
+    <button type="submit" class="btn btn-primary my-5">Submit</button>
 </form>
+
 {% if form.errors %}
 <div class="alert alert-danger my-5">
-    {{ form.errors.title.as_text}}
+    {{ form.errors.title.as_text }}
 </div>
-
 {% endif %}
 
-<a href="{% url 'notes.list %}" class="btn btn-secondary my-5">Cancel</a>
-<a href=" {% url 'notes.update' pk=note.id %}" class="btn btn-secondary">Edit</a>
+<a href="{% url 'notes.list' %}" class="btn btn-secondary my-5">Cancel</a>
 
-{% endblock%}
+{% if note %}
+<a href="{% url 'notes.update' pk=note.pk %}" class="btn btn-secondary">Edit</a>
+{% endif %}
+
+{% endblock %}
