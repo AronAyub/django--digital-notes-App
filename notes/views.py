@@ -36,7 +36,6 @@ class NoteCreateView(LoginRequiredMixin, CreateView):
     
 
 
-
 class NotesListView(LoginRequiredMixin, ListView):
     model = Notes 
     context_object_name = "notes"
