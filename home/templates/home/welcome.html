@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 
-{% block content%}
-    <h1>Welcome to My Portifolio!</h1>
-    <p>Today is {{today}}</p>
-    <a href ="{% url 'notes.list' %}" class ="btn btn-primary"> check out smart Projects/notes </a>
+{% block content %}
+    <h1>Welcome to My Portfolio!</h1>
+    <p>Today is {{ today }}</p>
+    <a href="{% url 'notes.list' %}" class="btn btn-primary">Check out Smart Projects/Notes</a>
+    <div class="d-grid gap-4">
+        <a href="https://github.com/aronayub" class="btn btn-dark me-2">GitHub</a>
+        <a href="https://www.linkedin.com/in/aron-ayub/"class="btn btn-primary me-2">LinkedIn</a>
+        <a href="https://twitter.com/aronayub" class="btn btn-info me-2">Twitter</a>
+        
+        <a href="https://www.youtube.com/@AronAyub" class="btn btn-danger">YouTube</a>
+        <a href="https://medium.com/@aronayub" class="btn btn-success">Medium</a>
+    </div>
 {% endblock %}
