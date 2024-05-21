@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome to My Portfolio!</h1>
-    <p>Today is {{ today }}</p>
-    <a href="{% url 'notes.list' %}" class="btn btn-primary">Check out Smart Projects/Notes</a>
-    <div class="d-grid gap-4">
-        <a href="https://github.com/aronayub" class="btn btn-dark me-2">GitHub</a>
-        <a href="https://www.linkedin.com/in/aron-ayub/"class="btn btn-primary me-2">LinkedIn</a>
-        <a href="https://twitter.com/aronayub" class="btn btn-info me-2">Twitter</a>        
-        <a href="https://www.youtube.com/@AronAyub" class="btn btn-danger">YouTube</a>
-        <a href="https://medium.com/@aronayub" class="btn btn-success">Medium</a>
+    <div class="container">
+        <h1>Welcome to My Portfolio!</h1>
+        <p>Today is {{ today }}</p>
+        
+        <p>Hello! I'm Aron Ayub, a passionate software developer with experience in building innovative projects and smart solutions. I specialize in full-stack development and have a keen interest in machine learning and AI. Here, you can explore some of my work, read my thoughts on technology, and learn more about my journey.</p>
+        
+        <a href="{% url 'notes.list' %}" class="btn btn-primary mb-5">Check out Smart Projects/Notes</a>
+        
+        <!-- Remove the social media icons -->
     </div>
 {% endblock %}
