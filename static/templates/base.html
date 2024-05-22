@@ -17,13 +17,20 @@
             background-color: black;
             color: white;
             text-align: left;
-            padding: 10px;
+            padding: 15px;
             margin-top: auto; /* Pushes footer to the bottom */
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Ensures space between logo and reserved text */
+        }
+        footer .left-content {
             display: flex;
             align-items: center;
         }
         footer .social-icons {
-            margin-right: auto;
+            display: flex;
+            gap: 10px; /* Adds gap between social icons */
+            margin-left: 200px; /* Adds space between logo and social icons */
         }
     </style>
 </head>
@@ -48,12 +55,17 @@
     {% endblock %}
 </div>
 <footer>
-    <div class="social-icons">
-        <a href="https://github.com/aronayub" class="btn btn-dark me-2"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/aron-ayub/" class="btn btn-primary me-2"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/aronayub" class="btn btn-info me-2"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/@AronAyub" class="btn btn-danger me-2"><i class="fab fa-youtube"></i></a>
-        <a href="https://medium.com/@aronayub" class="btn btn-success"><i class="fab fa-medium"></i></a>
+    <div class="left-content">
+        <div class="logo">
+            <h5>LiquidTech Solutions</h5>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/aronayub" class="btn btn-dark me-2"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aron-ayub/" class="btn btn-primary me-2"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/aronayub" class="btn btn-info me-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@AronAyub" class="btn btn-danger me-2"><i class="fab fa-youtube"></i></a>
+            <a href="https://medium.com/@aronayub" class="btn btn-success"><i class="fab fa-medium"></i></a>
+        </div>
     </div>
     &copy; 2024 All Rights Reserved
 </footer>
