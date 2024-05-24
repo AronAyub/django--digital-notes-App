@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
     <div class="container">
@@ -8,7 +9,44 @@
         <p>Hello! I'm Aron Ayub, a passionate software developer with experience in building innovative projects and smart solutions. I specialize in full-stack development and have a keen interest in machine learning and AI. Here, you can explore some of my work, read my thoughts on technology, and learn more about my journey.</p>
         
         <a href="{% url 'notes.list' %}" class="btn btn-primary mb-5">Check out Smart Projects/Notes</a>
+
+        <h2 class="mb-4">My Projects</h2>
         
-        <!-- Remove the social media icons -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'images/image2_3382507_1280.jpg' %}" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title 1</h5>
+                        <p class="card-text">A brief description of what this project is about and the technologies used.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'images/iot-4085382_1280.jpg' %}" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title 2</h5>
+                        <p class="card-text">A brief description of what this project is about and the technologies used.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="{% static 'images/image1_3706562_1280.jpg' %}" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title 3</h5>
+                        <p class="card-text">A brief description of what this project is about and the technologies used.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="mb-4">About Me</h2>
+        <p>I have been working in the tech industry for over X years, with a focus on web development, software engineering, and artificial intelligence. My journey started with a deep curiosity about how things work and a passion for solving complex problems. Over the years, I have honed my skills in various programming languages and frameworks, allowing me to create robust and scalable applications.</p>
+        
+        <p>In addition to my technical skills, I enjoy sharing my knowledge through blog posts and tutorials. My aim is to make technology more accessible and to inspire others to pursue their own paths in the tech world.</p>
+        
+        <p>Feel free to explore my projects and get in touch if you would like to collaborate or learn more about my work.</p>
     </div>
 {% endblock %}

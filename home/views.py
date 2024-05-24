@@ -17,6 +17,9 @@ class SignupView(CreateView):
             return redirect('notes.list')
         return super().get(request, *args, **kwargs)
 
+
+class AboutView(TemplateView):
+    template_name = 'home/about.html'
 class LogoutInterfaceView(LogoutView):
     template_name = 'home/logout.html'
 
