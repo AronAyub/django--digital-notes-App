@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <div style="text-align: left;" class="contact-container">
+        <h1>Contact Us</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+        <div class="form-si">
+            <form action="sigup" method="post">
+                <label for="phone">Phone number:</label>
+                <p><input type="text" type="phone"></p>
+                <label for="name">First Name:</label>
+                <p><input type="text"></p>
+                <label for="phone">Email:</label>
+                <p><input type="email"></p>
+                <input type="submit" name="Submit">
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+
+</body>
+
+</html>
