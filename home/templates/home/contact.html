@@ -4,33 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <!-- Add your CSS file link here if you have one -->
 </head>
 
 <body>
-    {% extends 'base.html' %}
-    {% block content %}
-    <div style="text-align: left;" class="contact-container">
+    <div class="contact-container">
         <h1>Contact Us</h1>
         <form method="post">
             {% csrf_token %}
-            {{ form.as_p }}
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
             <button type="submit">Submit</button>
         </form>
-        <div class="form-si">
-            <form action="sigup" method="post">
-                <label for="phone">Phone number:</label>
-                <p><input type="text" type="phone"></p>
-                <label for="name">First Name:</label>
-                <p><input type="text"></p>
-                <label for="phone">Email:</label>
-                <p><input type="email"></p>
-                <input type="submit" name="Submit">
-            </form>
-        </div>
     </div>
-    {% endblock %}
-
 </body>
 
 </html>

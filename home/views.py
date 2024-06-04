@@ -10,6 +10,7 @@ from .forms import ContactForm
 from .models import ContactSubmission
 from .forms import ContactForm  # Import the ContactForm
 
+
 class SignupView(CreateView):
     form_class = UserCreationForm
     template_name = 'home/register.html'
